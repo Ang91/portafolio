@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Portafolio</title>
-  <!-- Conexión con el archivo CSS -->
+  <title>Portafolio Web</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!--Menu encabezado-->
-  <div class="contenedor-header">
-    <header>
-      <div>
-        <a href="#">Angie</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#inicio">INICIO</a></li>    
-          <li><a href="#sobremi">SOBRE MI</a></li>   
-          <li><a href="skills">SKILLS</a></li>
-          <li><a href="#curriculum">CURRICULUM</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contacto">CONTACTO</a></li>
-        </ul>
-      </nav>
-      <div class="nav-responsive"></div>
-      <i class="fa-solid fa-bars"></i>
-    </header>
-  </div>
-  
+  <header>
+    <h1>Mi Portafolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>¡Hola! Soy una desarrolladora web apasionada por crear sitios web modernos y funcionales. Me encanta resolver problemas y aprender nuevas tecnologías.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="project">
+      <h3>Sistema de Inventarios</h3>
+      <p>Un sistema web para gestionar inventarios, creado con PHP, SQL y Bootstrap.</p>
+      <a href="#" class="button">Ver proyecto</a>
+    </div>
+    <div class="project">
+      <h3>Portafolio Web</h3>
+      <p>Un portafolio personal diseñado con HTML, CSS y JavaScript.</p>
+      <a href="#" class="button">Ver proyecto</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required>
+      
+      <label for="message">Mensaje:</label>
+      <textarea id="message" rows="5" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mi Portafolio</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
