@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Web</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+      <!-- Incluir Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Mi Portafolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="image-container"></div>
+    <header>
+        <h1 class="fade-in">Angie</h1>
+        <p class="fade-in">Desarrolladora Frontend</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sobre-mi" class="reveal">
+        <h2>Sobre Mí</h2>
+        <p>Soy desarrolladora frontend con experiencia en la creación de interfaces web atractivas y funcionales utilizando HTML, CSS y JavaScript. Mi enfoque está en proporcionar una experiencia de usuario intuitiva y accesible, aplicando principios de diseño UX/UI en cada proyecto. Me apasiona aprender y resolver problemas de manera eficiente, y busco siempre mejorar mis habilidades mediante la colaboración y el aprendizaje continuo. Mi objetivo es ayudar a las empresas a crear productos web que no solo sean visualmente atractivos, sino también fáciles de usar y optimizados para el rendimiento.</p>
+    </section>
+    
+    <section id="proyectos" class="reveal">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto.</p>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>¡Hola! Soy una desarrolladora web apasionada por crear sitios web modernos y funcionales. Me encanta resolver problemas y aprender nuevas tecnologías.</p>
-  </section>
+    <section id="educacion" class="reveal">
+        <h2>Educación</h2>
+        <div class="educacion">
+          <h3>Educación 1</h3>
+          <p>Descripción breve del proyecto.</p>
+        </div>
+    </section>
+    
+    <section id="contacto" class="reveal">
+        <h2>Contacto</h2>
+        <p>Email: angiepao2420@gmail.com</p>
 
-  <section id="projects">
-    <h2>Proyectos</h2>
-    <div class="project">
-      <h3>Sistema de Inventarios</h3>
-      <p>Un sistema web para gestionar inventarios, creado con PHP, SQL y Bootstrap.</p>
-      <a href="#" class="button">Ver proyecto</a>
-    </div>
-    <div class="project">
-      <h3>Portafolio Web</h3>
-      <p>Un portafolio personal diseñado con HTML, CSS y JavaScript.</p>
-      <a href="#" class="button">Ver proyecto</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contacto</h2>
-    <form id="contact-form">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" required>
+    <footer>
+      <div class="social-links">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
       
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" required>
+        <!-- GitHub -->
+        <a href="https://github.com/tu-usuario" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       
-      <label for="message">Mensaje:</label>
-      <textarea id="message" rows="5" required></textarea>
+        <!-- Correo Electrónico -->
+        <a href="mailto:tu-correo@dominio.com" class="social-icon">
+          <i class="fas fa-envelope"></i> Email
+        </a>
       
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+        <!-- Agregar otros iconos si es necesario -->
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/tu-perfil" target="_blank" class="social-icon">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        
+        <!-- Twitter -->
+        <a href="https://twitter.com/tu-usuario" target="_blank" class="social-icon">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+      </div>      
+      <p>&copy; 2025 Angie  - Todos los derechos reservados.</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 Mi Portafolio</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script>
+        ScrollReveal().reveal('.reveal', { delay: 300, distance: '50px', origin: 'bottom', duration: 1000 });
+        ScrollReveal().reveal('.fade-in', { delay: 500, opacity: 0, duration: 1500 });
+    </script>
 </body>
 </html>
+
