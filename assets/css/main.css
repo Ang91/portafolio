@@ -1056,12 +1056,15 @@ header #menu-btn:hover{
 }
 
 .contact-form{
+    max-width: 75%;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 42rem;
-        flex: 1 1 42rem;
+    flex: 1 1 42rem;
 }
 
 .contact-form .box{
+    align-self: baseline;
+    display: flex;
     width: 100%;
     text-transform: none;
     color: var(--grey);
